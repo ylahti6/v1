@@ -1,9 +1,12 @@
-import textContent from '../assets/textContext';
-
+import textContent from '../../assets/textContext';
 import './Nav.scss';
 
+import NavTime from './featureTime';
+
+
 function Nav() {
-const {name, works, about, contact, timeFeature} = textContent;
+const {name, works, about, contact} = textContent;
+
     return (
         <nav>
             <ul>
@@ -11,7 +14,7 @@ const {name, works, about, contact, timeFeature} = textContent;
                 <li>{works}</li>
                 <li>{about}</li>
                 <li>{contact}</li>
-                <li>{timeFeature}</li>
+                <li><NavTime /></li>
             </ul>
         </nav>
     );

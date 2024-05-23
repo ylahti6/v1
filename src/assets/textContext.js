@@ -5,7 +5,7 @@ const textContent = {
     works: "Works",
     about: "About",
     contact: "Contact",
-    timeFeature: "London (GMT)"
+    location: "London (GMT)"
 }
 
 export default textContent;
