@@ -1,8 +1,10 @@
+import './Nav.scss';
+
 function Nav() {
     return (
         <nav>
             <ul>
-                <li></li>
+                <li>testing</li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -11,3 +13,5 @@ function Nav() {
         </nav>
     );
 }
+
+export default Nav;
