@@ -51,7 +51,7 @@
 
 @media (max-width: 640px) {
   .nav {
-    margin: 0rem;
+    margin: 0 0rem;
     height: 10vh;
     position: relative;
   }
@@ -80,12 +80,12 @@
   }
 
   .nav > .nav-list {
-    gap: 0rem;
-    width: 100%;
-    height: 0;
-    top: 40px;
-    left: 0;
     overflow: hidden;
+    width: 100%;
+    top: 40px;
+    height: 0;
+    left: 0;
+    gap: 0rem;
   }
 
   .nav > ul {
@@ -95,7 +95,7 @@
   }
 
   .nav > .nav-list > li {
-    margin: 1rem 2rem 0 2rem;
+    margin: 2rem 0rem 0 1rem;
   }
 
   .nav > #nav-check:checked ~ .nav-list {
