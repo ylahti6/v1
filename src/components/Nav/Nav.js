@@ -25,9 +25,6 @@ function Nav() {
 
       <div className="nav-btn">
         <label htmlFor="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
         </label>
       </div>
       
