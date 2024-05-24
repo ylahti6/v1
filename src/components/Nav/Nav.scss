@@ -1,6 +1,8 @@
+@import '../../styles/mixins.scss';
+
 .nav {
-  height: 10vh;
-  margin: 0 4rem;
+  @include pageWrap;
+  height: 15vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -13,7 +15,7 @@
 }
 
 .nav > .nav-header > .nav-title {
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -50,6 +52,7 @@
 @media (max-width: 640px) {
   .nav {
     margin: 0rem;
+    height: 10vh;
     position: relative;
   }
 

@@ -4,7 +4,7 @@ const textContent = {
     name: "yannick.",
     works: "Works",
     about: "About",
-    contact: "Contact",
+    contact: "Contacts",
     location: "London (GMT)"
 }
 
