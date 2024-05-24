@@ -1,4 +1,4 @@
-import textContent from "../../assets/textContext";
+import textContent from "../../../assets/textContext";
 
 function Time() {
     const {location} = textContent;
