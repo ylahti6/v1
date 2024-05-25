@@ -3,6 +3,7 @@
 .nav {
   @include pageWrap;
   height: 15vh;
+  // background-color: green;
   display: flex;
   align-items: center;
   position: relative;
@@ -10,12 +11,11 @@
 }
 
 .nav > .nav-header {
-  flex: 0.95;
-  padding-left: 1rem;
+  flex: 1;
 }
 
-.nav > .nav-header > .nav-title {
-  font-size: 2rem;
+.nav-title {
+  font-size: 2.5vw;
   font-weight: 600;
 }
 
@@ -51,19 +51,21 @@
 
 @media (max-width: 640px) {
   .nav {
-    margin: 0 0rem;
-    height: 10vh;
+    @include mobileWrap;
+    height: fit-content;
     position: relative;
+    // background-color: green;
+  
+    .nav-title {
+      font-size: 1.75rem;
+      font-weight: bolder;
+    }
+    .nav-btn {
+      display: inline-block;
+      margin: 0.5rem 0;
+    }
   }
 
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    margin: 1rem;
-    right: 0;
-    top: 0;
-  }
-  
   .nav > .nav-btn > label {
     display: inline-block;
     // margin: 1rem;
@@ -71,7 +73,6 @@
   
   .nav > .nav-btn > label {
     background-color: var(--theme1-text-color);
-    border-top: 2px solid var(--theme1-bg-color);
     display: block;
     width: 25px;
     height: 25px;

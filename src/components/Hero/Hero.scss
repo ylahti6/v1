@@ -1,0 +1,26 @@
+@import '../../styles/mixins.scss';
+
+.hero {
+    @include pageWrap;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        font-size: 9vw;
+        font-weight: 400;
+    }
+    @media (max-width: 640px) {
+        @include mobileWrap;
+        height: 100%;
+        // background-color: red;
+        max-height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        h1 {
+            font-size: 2.7rem;
+            font-weight: 400;
+        }
+    }
+}
+

@@ -1,11 +1,12 @@
 import './App.scss';
 import Nav from './components/Nav/Nav';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <div className="App">
       <Nav />      
-      {/* <h1>testing</h1> */}
+      <Hero />
     </div>
   );
 }
