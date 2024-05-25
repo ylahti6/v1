@@ -1,0 +1,16 @@
+@import '../../styles/mixins.scss';
+
+.hero {
+    @include pageWrap;
+    height: 50vh;
+    background-color: red;
+    h1 {
+        font-size: 9vw;
+        font-weight: 500;
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 640px) {
+  
+}
