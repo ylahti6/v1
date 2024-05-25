@@ -54,6 +54,7 @@
     @include mobileWrap;
     height: fit-content;
     position: relative;
+    // background-color: green;
   
     .nav-title {
       font-size: 1.75rem;
@@ -61,7 +62,7 @@
     }
     .nav-btn {
       display: inline-block;
-      margin: 0.75rem 0;
+      margin: 0.5rem 0;
     }
   }
 
