@@ -8,7 +8,7 @@ const textContent = {
     location: "London (GMT)",
 
     // --- HERO CONTENT
-    header: "Creative developer",
+    header: "Creative design",
     // --- SKILLS
     mongoDB: "mongo db",
     react: "react",
