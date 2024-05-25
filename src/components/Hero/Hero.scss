@@ -3,14 +3,24 @@
 .hero {
     @include pageWrap;
     height: 50vh;
-    background-color: red;
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
     h1 {
         font-size: 9vw;
-        font-weight: 500;
-        background-color: yellow;
+        font-weight: 400;
+        // background-color: yellow;
+    }
+    @media (max-width: 640px) {
+        @include mobileWrap;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+        }
     }
 }
 
-@media (max-width: 640px) {
-  
-}
