@@ -10,10 +10,14 @@ const textContent = {
     // --- HERO CONTENT
     header: "Creative design",
     // --- SKILLS
-    mongoDB: "mongo db",
-    react: "react",
-    express: "express",
-    node: "node",
+    mongoDB: "MongoDB",
+    react: "React",
+    express: "Express",
+    node: "Node",
+
+
+    // --- ERROR MESSAGES
+    videoError: "Uh - oh! Seems like your browser does not support this video."
 }
 
 export default textContent;
