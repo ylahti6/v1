@@ -15,6 +15,10 @@ const textContent = {
     express: "Express",
     node: "Node",
 
+    // --- ABOUT CONTENT
+    aboutTag: "ABOUT",
+    aboutContent: "HELLO, WE'RE YOUNIQUE STUDIO. OUT TEAM IS HERE TO CREATE UNIQUE BRANDS & HELP THE MTO STAND OUT. WE UNITE STRATEGY, DEISGN & CREATIVE SOLUTONS TO MAKE IT HAPPEN.",
+
 
     // --- ERROR MESSAGES
     videoError: "Uh - oh! Seems like your browser does not support this video."
