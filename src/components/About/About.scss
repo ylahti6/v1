@@ -2,8 +2,6 @@
 
 .about {
     @include pageWrap;
-    display: flex;
-    justify-content: space-between;
     p:first-child {
         margin: 1rem 0 2rem 0;
         font-size: 3vw;

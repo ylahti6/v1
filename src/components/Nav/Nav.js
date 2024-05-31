@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import textContent from '../../assets/textContext';
+import textContent from '../../assets/textContent';
 import './Nav.scss';
 
 function Nav() {

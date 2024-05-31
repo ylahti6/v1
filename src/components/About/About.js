@@ -1,4 +1,4 @@
-import textContext from '../../assets/textContext';
+import textContext from '../../assets/textContent';
 import './About.scss';
 
 function About() {

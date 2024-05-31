@@ -1,5 +1,5 @@
 import "../Video/ShowCase.scss";
-import "../../assets/textContext";
+import "../../assets/textContent";
 import sampleVideo from "../../assets/videos/younique-studio-showreel.mp4";
 // import textContent from '../../assets/textContext';
 
