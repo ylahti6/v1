@@ -2,9 +2,8 @@
 
 .hero {
     @include pageWrap;
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;
+    @include pageMargin;
+    height: fit-content;
     h1 {
         font-size: 9vw;
         font-weight: 400;
