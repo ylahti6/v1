@@ -54,7 +54,7 @@
     @include mobileWrap;
     height: fit-content;
     position: relative;
-    // background-color: green;
+    background-color: green;
   
     .nav-title {
       font-size: 1.75rem;
@@ -68,7 +68,6 @@
 
   .nav > .nav-btn > label {
     display: inline-block;
-    // margin: 1rem;
   }
   
   .nav > .nav-btn > label {
@@ -81,11 +80,10 @@
   }
 
   .nav > .nav-list {
-    overflow: hidden;
-    width: 100%;
+    position: fixed;
     top: 40px;
     height: 0;
-    left: 0;
+    left: 1rem;
     gap: 0rem;
   }
 
@@ -104,12 +102,12 @@
     font-size: 2.25rem;
   }
 
-  .nav > #nav-check:checked ~ .overlay {
+  #nav-check:checked ~ .overlay {
     display: block;
     z-index: -1;
   }
 
-  .nav.checked > .nav-header > .nav-title {
+  .nav-title {
     color: var(--theme1-text-color);
   }
 

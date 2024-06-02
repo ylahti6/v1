@@ -10,3 +10,22 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+@mixin titleAboutsx {
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+@mixin titleAboutlg {
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+@mixin contentAboutlg {
+    font-size: 1.15vw;
+    font-weight: 600;
+}
+
+
+@mixin intendent {
+    padding-left: 20px;
+}
