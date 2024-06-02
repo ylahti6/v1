@@ -56,8 +56,8 @@
   .nav {
     @include mobileWrap;
     height: fit-content;
-    position: relative;
-    background-color: green;
+    background-color: var(--theme1-bg-color);
+
     
     .nav-title {
       color: var(--theme1-text-color);
@@ -79,7 +79,8 @@
     .nav-list {
       overflow: hidden;
       width: 100%;
-      top: 40px;
+      top: 0;
+      // left: 0;
       height: 0;
       gap: 0rem;
       position: absolute;
@@ -99,6 +100,10 @@
   #nav-check:checked ~ .overlay {
     display: block;
     z-index: -1;
+  }
+
+  #nav-check:checked ~ .nav {
+    position: fixed;
   }
 
   .nav.checked > .nav-btn > label {
