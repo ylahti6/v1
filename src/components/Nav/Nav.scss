@@ -3,40 +3,33 @@
 .nav {
   @include pageWrap;
   height: 15vh;
-  // background-color: green;
   display: flex;
   align-items: center;
   position: relative;
   z-index: 1000; /* Ensure nav is above the overlay */
+  
+  .nav-header {
+    flex: 1;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: var(--theme1-text-color);
+        cursor: pointer;
+      }
+    }
+  }
+
+  #nav-check {
+    display: none;
+  }
 }
 
-.nav > .nav-header {
-  flex: 1;
-}
-
-.nav-title {
-  font-size: 2.5vw;
-  font-weight: 600;
-}
-
-.nav > .nav-list {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav > .nav-list > li {
-  list-style-type: none;
-}
-
-.nav > .nav-list > li a {
-  text-decoration: none;
-  color: var(--theme1-text-color);
-  cursor: pointer;
-}
-
-.nav > #nav-check {
-  display: none;
-}
 
 .overlay {
   position: fixed;
@@ -47,6 +40,15 @@
   background: var(--theme1-bg-color);
   display: none;
   z-index: 999; /* Ensure the overlay is behind the nav */
+}
+
+@media (min-width: 640px) {
+  .nav {
+    .nav-title {
+      font-size: 2.5vw;
+      font-weight: 600;
+    }
+  }
 }
 
 @media (max-width: 640px) {
@@ -63,24 +65,22 @@
     .nav-btn {
       display: inline-block;
       margin: 0.5rem 0;
+      label {
+        background-color: var(--theme1-text-color);
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        transition: 0.4s ease-in-out;
+      }
     }
   }
 
-  .nav > .nav-btn > label {
-    display: inline-block;
-  }
-  
-  .nav > .nav-btn > label {
-    background-color: var(--theme1-text-color);
-    display: block;
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    transition: 0.4s ease-in-out;
-  }
 
   .nav > .nav-list {
+    overflow: hidden;
     position: fixed;
+    width: 100%;
     top: 40px;
     height: 0;
     left: 1rem;
@@ -105,6 +105,7 @@
   #nav-check:checked ~ .overlay {
     display: block;
     z-index: -1;
+    background-color: red;
   }
 
   .nav-title {
