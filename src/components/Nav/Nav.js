@@ -34,7 +34,7 @@ function Nav() {
         <li><a href="#contact">{contact}</a></li>
       </ul>
 
-      <div className="overlay"></div>
+      <div className="overlay">TEST</div>
     </nav>
   );
 }

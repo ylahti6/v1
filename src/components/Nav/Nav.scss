@@ -6,8 +6,10 @@
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 1000; /* Ensure nav is above the overlay */
-  
+
+  // --- ENSURE NAV IS ABOVE OVERLAY
+  z-index: 1000; 
+
   .nav-header {
     flex: 1;
   }
@@ -29,7 +31,6 @@
     display: none;
   }
 }
-
 
 .overlay {
   position: fixed;
@@ -57,8 +58,9 @@
     height: fit-content;
     position: relative;
     background-color: green;
-  
+    
     .nav-title {
+      color: var(--theme1-text-color);
       font-size: 1.75rem;
       font-weight: bolder;
     }
@@ -74,30 +76,22 @@
         transition: 0.4s ease-in-out;
       }
     }
+    .nav-list {
+      overflow: hidden;
+      width: 100%;
+      top: 40px;
+      height: 0;
+      gap: 0rem;
+      position: absolute;
+      margin-top: 5rem;
+      flex-direction: column;
+      li {
+        margin-top: 1rem;
+      }
+    }
   }
 
-
-  .nav > .nav-list {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    top: 40px;
-    height: 0;
-    left: 1rem;
-    gap: 0rem;
-  }
-
-  .nav > ul {
-    position: absolute;
-    margin-top: 5rem;
-    flex-direction: column;
-  }
-
-  .nav > .nav-list > li {
-    margin-top: 2rem;
-  }
-
-  .nav > #nav-check:checked ~ .nav-list {
+  #nav-check:checked ~ .nav-list {
     height: fit-content;
     font-size: 2.25rem;
   }
@@ -105,11 +99,6 @@
   #nav-check:checked ~ .overlay {
     display: block;
     z-index: -1;
-    background-color: red;
-  }
-
-  .nav-title {
-    color: var(--theme1-text-color);
   }
 
   .nav.checked > .nav-btn > label {
