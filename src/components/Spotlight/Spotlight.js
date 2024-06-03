@@ -1,18 +1,33 @@
-import '../Spotlight/Spotlight.scss';
+import React from 'react';
+import Card from './Card/Card';
+import './Spotlight.scss';
 import textContent from '../../assets/textContent';
 
-function Spotlight() {
-    const {spotlight, project1} = textContent;
-    return(
-        <div className="spotlight">
-            <p>{spotlight}</p>
-            
-            <div className='card'>
-                <p>{project1}</p>
-                <p>arrow</p>
-            </div>
-        </div>
-    );
-}
+const App = () => {
+  const {spotlight} = textContent;
+  const cardsData = [
+    { 
+      title: 'TalkWiz', 
+      link: "google.com" 
+    },
+    { 
+      title: 'Card 2', 
+      link: 'This is the second card.' 
+    },
+    { 
+      title: 'Card 3', 
+      link: 'This is the third card.' 
+    },
+  ];
 
-export default Spotlight;
+  return (
+    <div className="spotlight">
+      <p>{spotlight}</p>
+      {cardsData.map((card, index) => (
+        <Card key={index} title={card.title} link={card.link} />
+      ))}
+    </div>
+  );
+};
+
+export default App;

@@ -1,0 +1,15 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--theme1-text-color);
+
+    // --- STYLING FOR PROJECT NAME
+    p {
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    a {
+        font-size: 2rem;
+        color: var(--theme1-text-color);
+    }
+}
