@@ -19,6 +19,9 @@ const textContent = {
     aboutTag: "ABOUT",
     aboutContent: "HELLO, WE'RE YOUNIQUE STUDIO. OUT TEAM IS HERE TO CREATE UNIQUE BRANDS & HELP THE MTO STAND OUT. WE UNITE STRATEGY, DEISGN & CREATIVE SOLUTONS TO MAKE IT HAPPEN.",
 
+    // --- SPOTLIGHT CONTENT
+    spotlight: "SPOTLIGHT",
+    project1: "EasyTalk",
 
     // --- ERROR MESSAGES
     videoError: "Uh - oh! Seems like your browser does not support this video."

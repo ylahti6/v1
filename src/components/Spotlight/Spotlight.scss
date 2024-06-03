@@ -4,15 +4,29 @@
     @include pageWrap;
     height: 50vh;
     background-color: red;
-    p:nth-child(2) {
-        font-size: 6vw;
-        font-weight: 400;
+    
+    @media (min-width: 640px) {
+        
     }
+
     @media (max-width: 640px) {
         @include mobileWrap;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        & > p {
+            margin-bottom: 1rem;
+            @include titleAboutsx;
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--theme1-text-color);
+
+            // --- STYLING FOR PROJECT NAME
+            p:first-child {
+                font-size: 6vw;
+                font-weight: 400;
+            }
+        }
     }
 }
 
