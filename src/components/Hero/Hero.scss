@@ -1,12 +1,15 @@
 @import '../../styles/mixins.scss';
 
 .hero {
-    @include pageWrap;
-    @include pageMargin;
+    @media (min-width: 640px) {
+        @include pageWrap;
+        @include pageMargin;
+        
+    }
     height: fit-content;
     
     h1 {
-        font-size: 9vw;
+        font-size: 7.5vw;
         font-weight: 400;
     }
     @media (max-width: 640px) {
