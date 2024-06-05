@@ -3,39 +3,34 @@
 .nav {
   @include pageWrap;
   height: 15vh;
-  // background-color: green;
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 1000; /* Ensure nav is above the overlay */
-}
-
-.nav > .nav-header {
-  flex: 1;
-}
-
-.nav-title {
-  font-size: 2.5vw;
-  font-weight: 600;
-}
-
-.nav > .nav-list {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav > .nav-list > li {
-  list-style-type: none;
-}
-
-.nav > .nav-list > li a {
-  text-decoration: none;
   color: var(--theme1-text-color);
-  cursor: pointer;
-}
 
-.nav > #nav-check {
-  display: none;
+  // --- ENSURE NAV IS ABOVE OVERLAY
+  z-index: 1000; 
+
+  .nav-header {
+    flex: 1;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: var(--theme1-text-color);
+        cursor: pointer;
+      }
+    }
+  }
+
+  #nav-check {
+    display: none;
+  }
 }
 
 .overlay {
@@ -49,68 +44,67 @@
   z-index: 999; /* Ensure the overlay is behind the nav */
 }
 
+@media (min-width: 640px) {
+  .nav {
+    .nav-title {
+      font-size: 2.5vw;
+      font-weight: 700;
+    }
+  }
+}
+
 @media (max-width: 640px) {
   .nav {
     @include mobileWrap;
     height: fit-content;
-    position: relative;
-    // background-color: green;
-  
+    background-color: var(--theme1-bg-color);
+
+    
     .nav-title {
+      color: var(--theme1-text-color);
       font-size: 1.75rem;
       font-weight: bolder;
     }
     .nav-btn {
       display: inline-block;
       margin: 0.5rem 0;
+      label {
+        background-color: var(--theme1-text-color);
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        transition: 0.4s ease-in-out;
+      }
+    }
+    .nav-list {
+      overflow: hidden;
+      width: 100%;
+      top: 0;
+      // left: 0;
+      height: 0;
+      gap: 0rem;
+      position: absolute;
+      margin-top: 5rem;
+      flex-direction: column;
+      li {
+        margin-top: 1rem;
+      }
     }
   }
 
-  .nav > .nav-btn > label {
-    display: inline-block;
-    // margin: 1rem;
-  }
-  
-  .nav > .nav-btn > label {
-    background-color: var(--theme1-text-color);
-    display: block;
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    transition: 0.4s ease-in-out;
-  }
-
-  .nav > .nav-list {
-    overflow: hidden;
-    width: 100%;
-    top: 40px;
-    height: 0;
-    left: 0;
-    gap: 0rem;
-  }
-
-  .nav > ul {
-    position: absolute;
-    margin-top: 5rem;
-    flex-direction: column;
-  }
-
-  .nav > .nav-list > li {
-    margin: 2rem 0rem 0 1rem;
-  }
-
-  .nav > #nav-check:checked ~ .nav-list {
+  #nav-check:checked ~ .nav-list {
     height: fit-content;
     font-size: 2.25rem;
   }
 
-  .nav > #nav-check:checked ~ .overlay {
+  #nav-check:checked ~ .overlay {
     display: block;
     z-index: -1;
   }
 
-  .nav.checked > .nav-header > .nav-title {
-    color: var(--theme1-text-color);
+  #nav-check:checked ~ .nav {
+    position: fixed;
   }
 
   .nav.checked > .nav-btn > label {

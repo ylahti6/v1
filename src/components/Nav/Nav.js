@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import textContent from '../../assets/textContext';
+import textContent from '../../assets/textContent';
 import './Nav.scss';
 
 function Nav() {
@@ -34,7 +34,8 @@ function Nav() {
         <li><a href="#contact">{contact}</a></li>
       </ul>
 
-      <div className="overlay"></div>
+      <div className="overlay">
+      </div>
     </nav>
   );
 }

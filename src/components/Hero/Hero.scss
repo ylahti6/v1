@@ -1,18 +1,20 @@
 @import '../../styles/mixins.scss';
 
 .hero {
-    @include pageWrap;
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;
+    @media (min-width: 640px) {
+        @include pageWrap;
+        @include pageMargin;
+        
+    }
+    height: fit-content;
+    
     h1 {
-        font-size: 9vw;
+        font-size: 7.5vw;
         font-weight: 400;
     }
     @media (max-width: 640px) {
         @include mobileWrap;
         height: 100%;
-        // background-color: red;
         max-height: 15rem;
         display: flex;
         flex-direction: column;

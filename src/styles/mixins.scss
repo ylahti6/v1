@@ -1,8 +1,22 @@
 @mixin pageWrap {
     margin: 0 8%;
 }
-
 @mixin mobileWrap {
     margin: 0 0.75rem 2rem 0.75rem;
-    // padding-bottom: 2rem;
+}
+@mixin pageMargin {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+@mixin titleAboutsx {
+    font-size: 2vw;
+    font-weight: 600;
+}
+@mixin titleAboutlg {
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+@mixin contentAboutlg {
+    font-size: 1.15vw;
+    font-weight: 600;
 }

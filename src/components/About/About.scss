@@ -1,0 +1,36 @@
+@import '../../styles/mixins.scss';
+
+.about {
+    @include pageWrap;  
+    
+    @media (min-width: 640px) {
+        p:first-child {
+            @include titleAboutlg;
+            margin: 4rem 0rem 0rem 0;
+        }
+
+        p:nth-child(2) {
+            font-size: 4vw;
+            font-weight: 400;
+        }
+    }
+   
+    @media (max-width: 640px) {
+        @include mobileWrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        p:first-child {
+            @include titleAboutsx;
+            margin: 1rem 0rem 1.5rem 0;
+        }
+
+        p:nth-child(2) {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+
+    }
+}
+
