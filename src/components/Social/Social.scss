@@ -5,6 +5,12 @@
 
   @media (max-width: 640px) {
     @include mobileWrap;
+    p {
+      @include titleAboutsx;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    
     a:first-child {
       margin-bottom: 2rem;
       font-size: 10vw;
@@ -13,11 +19,6 @@
       display: flex;
       align-items: center;
       gap: 2rem;
-    }
-    p {
-      @include titleAboutsx;
-      text-transform: uppercase;
-      margin-bottom: 2rem;
     }
 
     a {
