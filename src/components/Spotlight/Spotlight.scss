@@ -1,21 +1,19 @@
 @import '../../styles/mixins.scss';
 
 .spotlight {
-    @include desktopWrap;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
+    @include desktop-wrap;
+    @include section-margin;
     @media (min-width: 640px) {
         & > p {
-            @include titleAboutlg;
+            @include font-content-title1;
         }
     }
 
     @media (max-width: 640px) {
-        @include mobileWrap;
+        @include mobile-wrap;
         & > p {
             margin-bottom: 2rem;
-            @include titleAboutsx;
+            @include font-content;
         }
     }
 
@@ -24,7 +22,7 @@
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        @include titleAboutsx;
+        @include font-content;
         text-decoration: none;
         color: var(--theme1-text-color);
 

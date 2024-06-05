@@ -1,12 +1,12 @@
 @import '../../styles/mixins.scss';
 
 .social {
-  @include desktopWrap;
+  @include desktop-wrap;
 
   @media (max-width: 640px) {
-    @include mobileWrap;
+    @include mobile-wrap;
     p {
-      @include titleAboutsx;
+      @include font-content;
       text-transform: uppercase;
       margin-bottom: 2rem;
     }

@@ -2,7 +2,7 @@
 @import '../../styles/variables.scss';
 
 .nav {
-  @include desktopWrap;
+  @include desktop-wrap;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -58,13 +58,13 @@
 
 @media (max-width: 1240px) {
   .nav {
-    @include laptopWrap;
+    @include laptop-wrap;
   }
 }
 
 @media (max-width: 640px) {
   .nav {
-    @include mobileWrap;
+    @include mobile-wrap;
     height: fit-content;
     background-color: var(--theme1-bg-color);
 

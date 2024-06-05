@@ -1,26 +1,44 @@
-@mixin desktopWrap {
+@import './variables.scss';
+
+/* --- PAGE MARGIN FOR DESKTOP DEVICES */
+@mixin desktop-wrap {
     margin: 0 9%;
 }
-@mixin laptopWrap {
+/* --- PAGE MARGIN FOR LAPTOP DEVICES */
+@mixin laptop-wrap {
     margin: 0 1.5rem 4rem 1.5rem;
 }
-@mixin mobileWrap {
+/* --- PAGE MARGIN FOR MOBILE DEVICES */
+@mixin mobile-wrap {
     margin: 0 0.75rem 2rem 0.75rem;
 }
 /* --- MARGIN SET FOR EACH SECTION */
-@mixin sectionMargin {
+@mixin section-margin {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-@mixin titleAboutsx {
-    font-size: 3vw;
-    font-weight: bolder;
-}
-@mixin titleAboutlg {
-    font-size: 1.3vw;
+
+
+/* --- PRESET FONT STYLING */
+@mixin font-content-title1 {
+    font-size: var(--font-size-base1);
     font-weight: 600;
 }
-@mixin contentAboutlg {
-    font-size: 1.15vw;
-    font-weight: 600;
+@mixin font-content-title2 {
+    font-size: var(--font-size-base2);
+    font-weight: 500;
+}
+@mixin font-content-title3 {
+    font-size: var(--font-size-base3);
+    font-weight: 500;
+}
+
+@mixin font-content {
+    font-size: var(--font-size-heading1);
+    font-weight: 400;
+}
+
+@mixin font-content-mobile {
+    font-size: var(--font-size-mobile);
+    font-weight: 400;
 }

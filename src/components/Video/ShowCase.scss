@@ -1,8 +1,5 @@
-.smaple {
-    background-color: red;
-    width: 100%;
-}
-
+@import '../../styles/mixins.scss';
 video {
+    @include section-margin;
     width: 100%;
 }

@@ -2,18 +2,21 @@
 @import '../../styles/variables.scss';
 
 .hero {
-    @media (min-width: 640px) {
-        @include desktopWrap;
-        @include sectionMargin;   
-    }
     height: fit-content;
-    
+    @media (min-width: 1240px) {
+        @include desktop-wrap;
+        @include section-margin;   
+    }
     h1 {
         font-size: var(--font-size-heading2);
         font-weight: 400;
     }
+    @media (max-width: 1240px) {
+        @include laptop-wrap;
+        
+    }
     @media (max-width: 640px) {
-        @include mobileWrap;
+        @include mobile-wrap;
         display: flex;
         flex-direction: column;
         h1 {
