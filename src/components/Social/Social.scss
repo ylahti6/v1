@@ -1,0 +1,30 @@
+@import '../../styles/mixins.scss';
+
+.social {
+  @include pageWrap;
+
+  @media (max-width: 640px) {
+    @include mobileWrap;
+    a:first-child {
+      margin-bottom: 2rem;
+      font-size: 10vw;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    p {
+      @include titleAboutsx;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      display: flex;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: var(--theme1-text-color);
+    }
+  }
+}
