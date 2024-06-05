@@ -1,10 +1,14 @@
-@mixin pageWrap {
-    margin: 0 8%;
+@mixin desktopWrap {
+    margin: 0 9%;
+}
+@mixin laptopWrap {
+    margin: 0 1.5rem 4rem 1.5rem;
 }
 @mixin mobileWrap {
     margin: 0 0.75rem 2rem 0.75rem;
 }
-@mixin pageMargin {
+/* --- MARGIN SET FOR EACH SECTION */
+@mixin sectionMargin {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }

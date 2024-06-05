@@ -1,7 +1,7 @@
 @import '../../styles/mixins.scss';
 
 .about {
-    @include pageWrap;  
+    @include desktopWrap;  
     
     @media (min-width: 640px) {
         p:first-child {
@@ -10,7 +10,7 @@
         }
 
         p:nth-child(2) {
-            font-size: 4vw;
+            font-size: calc(3rem + 5*(100vw - 960px)/960);
             font-weight: 400;
         }
     }

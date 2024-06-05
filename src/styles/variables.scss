@@ -1,18 +1,28 @@
 :root {
-    /* --- THEME COLORS FOR EACH RELOAD */
-    --theme1-bg-color: #d47870;
-    --theme1-text-color: #3C1C19;
- 
-    --theme2-bg-color: #C3BEB0;
-    --theme2-text-color: #000000;
- 
-    --theme3-bg-color: #131608;
-    --theme3-text-color: #BBD95C;
- 
-    --theme4-bg-color: #C3BEB0;
-    --theme4-text-color: #000000;
- 
-    --theme5-bg-color: #1E1E1E;
-    --theme5-text-color: #D8DCE8;
+  /* --- THEME COLORS FOR EACH RELOAD */
+  --theme1-bg-color: #d47870;
+  --theme1-text-color: #3c1c19;
+
+  --theme2-bg-color: #c3beb0;
+  --theme2-text-color: #000000;
+
+  --theme3-bg-color: #131608;
+  --theme3-text-color: #bbd95c;
+
+  --theme4-bg-color: #c3beb0;
+  --theme4-text-color: #000000;
+
+  --theme5-bg-color: #1e1e1e;
+  --theme5-text-color: #d8dce8;
+
+  /* --- PRESET FONT SIZING FOR HEADINGS */
+  --font-size-heading3: 12vw;
+  --font-size-heading2: 8vw;
+  --font-size-heading1: 4vw;
+
+  /* --- PRESET FONT SIZING FOR CONTENT */
+  --font-size-base1: 1rem;
+  --font-size-base2: 1.75rem;
+  --font-size-base3: 2.25rem;
+  --font-size-base4: 3rem;
 }
- 

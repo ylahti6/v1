@@ -1,7 +1,7 @@
 @import '../../styles/mixins.scss';
 
 .social {
-  @include pageWrap;
+  @include desktopWrap;
 
   @media (max-width: 640px) {
     @include mobileWrap;
