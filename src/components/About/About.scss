@@ -1,7 +1,8 @@
 @import '../../styles/mixins.scss';
 
 .about {
-    @include desktop-wrap;  
+    @include desktop-wrap;
+    @include section-margin; 
     
     @media (min-width: 1240px) {
         p:first-child {
