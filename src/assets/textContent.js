@@ -22,6 +22,7 @@ const textContent = {
     // --- SPOTLIGHT CONTENT
     spotlight: "SPOTLIGHT",
     project1: "EasyTalk",
+    allProjects: "ALL PROJECTS",
 
     // --- ERROR MESSAGES
     videoError: "Uh - oh! Seems like your browser does not support this video."

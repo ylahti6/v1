@@ -2,9 +2,10 @@ import React from 'react';
 import Card from './Card/Card';
 import './Spotlight.scss';
 import textContent from '../../assets/textContent';
+import { IoMdAddCircle } from "react-icons/io";
 
 const App = () => {
-  const {spotlight} = textContent;
+  const {spotlight, allProjects} = textContent;
   const cardsData = [
     { 
       title: 'Echo lala', 
@@ -38,6 +39,8 @@ const App = () => {
       {cardsData.map((card, index) => (
         <Card key={index} title={card.title} link={card.link} />
       ))}
+
+      <a href='#' className='all-projects'><IoMdAddCircle className='icon'/>{allProjects}</a>
     </div>
   );
 };
