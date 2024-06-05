@@ -7,15 +7,27 @@ const App = () => {
   const {spotlight} = textContent;
   const cardsData = [
     { 
-      title: 'TalkWiz', 
+      title: 'Echo lala', 
       link: "google.com" 
     },
     { 
-      title: 'Card 2', 
+      title: 'e-ink standby', 
       link: 'This is the second card.' 
     },
     { 
-      title: 'Card 3', 
+      title: 'card 3', 
+      link: 'This is the third card.' 
+    },
+    { 
+      title: 'Card 4', 
+      link: 'This is the third card.' 
+    },
+    { 
+      title: 'Card 5', 
+      link: 'This is the third card.' 
+    },
+    { 
+      title: 'Card 6', 
       link: 'This is the third card.' 
     },
   ];

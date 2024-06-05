@@ -16,6 +16,7 @@
     @media (max-width: 640px) {
         @include mobileWrap;
         & > p {
+            margin-bottom: 2rem;
             @include titleAboutsx;
         }
     }
