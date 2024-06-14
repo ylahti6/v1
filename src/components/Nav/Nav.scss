@@ -1,8 +1,9 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
 .nav {
-  @include pageWrap;
-  height: 15vh;
+  @include desktop-wrap;
+  height: 10vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -43,26 +44,33 @@
   display: none;
   z-index: 999; /* Ensure the overlay is behind the nav */
 }
-
 @media (min-width: 640px) {
   .nav {
     .nav-title {
-      font-size: 2.5vw;
+      font-size: var(--font-size-base2);
       font-weight: 700;
     }
+    .nav-list {
+      font-size: var(--font-size-base1)
+    };
+  }
+}
+
+@media (max-width: 1240px) {
+  .nav {
+    @include laptop-wrap;
   }
 }
 
 @media (max-width: 640px) {
   .nav {
-    @include mobileWrap;
+    @include mobile-wrap;
     height: fit-content;
     background-color: var(--theme1-bg-color);
 
-    
     .nav-title {
       color: var(--theme1-text-color);
-      font-size: 1.75rem;
+      font-size: var(--font-size-base2);
       font-weight: bolder;
     }
     .nav-btn {
@@ -95,7 +103,7 @@
 
   #nav-check:checked ~ .nav-list {
     height: fit-content;
-    font-size: 2.25rem;
+    font-size: var(--font-size-base3);
   }
 
   #nav-check:checked ~ .overlay {

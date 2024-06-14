@@ -1,21 +1,28 @@
 @import '../../styles/mixins.scss';
 
 .spotlight {
-    @include pageWrap;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-
-    @media (min-width: 640px) {
+    @include section-margin;
+    @media (min-width: 1240px) {
+        @include desktop-wrap;
         & > p {
-            @include titleAboutlg;
+            margin-bottom: 2rem;
+            @include font-content-title2;
         }
     }
 
-    @media (max-width: 640px) {
-        @include mobileWrap;
+    @media (max-width: 1240px) {
+        @include laptop-wrap;
         & > p {
             margin-bottom: 2rem;
-            @include titleAboutsx;
+            @include font-content-title1;
+        }
+    }
+    
+    @media (max-width: 640px) {
+        @include mobile-wrap;
+        & > p {
+            margin-bottom: 2rem;
+            @include font-content-title1;
         }
     }
 
@@ -24,12 +31,15 @@
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        @include titleAboutsx;
         text-decoration: none;
         color: var(--theme1-text-color);
+        @include font-content-title1;
+        @media (max-width: 640px) {
+            @include font-content-mobile;
+        }
 
         .icon {
-            font-size: 1.25rem;
+            @include font-content-title2;
         }
     }
 }

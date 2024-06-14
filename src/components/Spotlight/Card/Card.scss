@@ -1,3 +1,5 @@
+@import '../Spotlight.scss';
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -5,15 +7,32 @@
 
     // --- STYLING FOR PROJECT NAME
     p {
-        font-weight: 400;
-        padding: 0.5rem 0;
-        font-size: 3.5vw;
+        padding: 0.75rem 0;
         text-transform: uppercase;
     }
     a {
-        font-size: 4vw;
+        @include font-content-title2;
         display: flex;
         align-items: center;
         color: var(--theme1-text-color);
+    }
+
+    @media (min-width: 1240px) {
+        p {
+            @include font-content-title2;
+        }
+    }
+
+    
+    @media (max-width: 1240px) {
+        p {
+            @include font-content;
+        }
+    }
+
+    @media (max-width: 640px) {
+        p {
+            @include font-content-title1;
+        }
     }
 }

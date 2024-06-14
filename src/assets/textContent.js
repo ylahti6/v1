@@ -24,6 +24,12 @@ const textContent = {
     project1: "EasyTalk",
     allProjects: "ALL PROJECTS",
 
+    // --- SOCIAL CONTENT
+    social: "social",
+    github: "github",
+    codepen: "codepen",
+    linkedin: "linkedin",
+
     // --- ERROR MESSAGES
     videoError: "Uh - oh! Seems like your browser does not support this video."
 }

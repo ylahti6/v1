@@ -1,27 +1,26 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
 
 .hero {
-    @media (min-width: 640px) {
-        @include pageWrap;
-        @include pageMargin;
-        
-    }
     height: fit-content;
-    
+    @media (min-width: 1240px) {
+        @include desktop-wrap;
+        @include section-margin;   
+    }
     h1 {
-        font-size: 7.5vw;
+        font-size: var(--font-size-heading2);
         font-weight: 400;
     }
+    @media (max-width: 1240px) {
+        @include laptop-wrap;
+        
+    }
     @media (max-width: 640px) {
-        @include mobileWrap;
-        height: 100%;
-        max-height: 15rem;
+        @include mobile-wrap;
         display: flex;
         flex-direction: column;
-        justify-content: end;
         h1 {
-            font-size: 2.7rem;
-            font-weight: 400;
+            font-size: var(--font-size-heading3);
         }
     }
 }
