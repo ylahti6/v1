@@ -1,7 +1,7 @@
 @import '../../styles/mixins.scss';
 
 .nav {
-  @include pageWrap;
+  @include page-wrap;
   height: 15vh;
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@
 
 @media (max-width: 640px) {
   .nav {
-    @include mobileWrap;
+    @include mobile-wrap;
     height: fit-content;
     background-color: var(--theme1-bg-color);
 

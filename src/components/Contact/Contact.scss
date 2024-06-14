@@ -1,0 +1,8 @@
+@import '../../styles/mixins.scss';
+
+.contact {
+  @include page-wrap;
+  h1 {
+    font-size: var();
+  }
+}

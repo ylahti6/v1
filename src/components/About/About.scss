@@ -1,11 +1,11 @@
 @import '../../styles/mixins.scss';
 
 .about {
-    @include pageWrap;  
+    @include page-wrap;  
     
     @media (min-width: 640px) {
         p:first-child {
-            @include titleAboutlg;
+            @include font-size-medium;
             margin: 4rem 0rem 0rem 0;
         }
 
@@ -16,13 +16,13 @@
     }
    
     @media (max-width: 640px) {
-        @include mobileWrap;
+        @include mobile-wrap;
         display: flex;
         flex-direction: column;
         justify-content: end;
 
         p:first-child {
-            @include titleAboutsx;
+            @include font-size-small;
             margin: 1rem 0rem 1.5rem 0;
         }
 

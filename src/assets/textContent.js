@@ -25,7 +25,11 @@ const textContent = {
     allProjects: "ALL PROJECTS",
 
     // --- ERROR MESSAGES
-    videoError: "Uh - oh! Seems like your browser does not support this video."
+    videoError: "Uh - oh! Seems like your browser does not support this video.",
+
+    // --- CONTACT SECTION
+    getInContact: "GET IN CONTACT",
+    
 }
 
 export default textContent;

@@ -1,22 +1,28 @@
-@mixin pageWrap {
+@mixin page-wrap {
     margin: 0 8%;
 }
-@mixin mobileWrap {
+@mixin mobile-wrap {
     margin: 0 0.75rem 2rem 0.75rem;
 }
-@mixin pageMargin {
+
+// --- MARGIN SET FOR EACH SECTION
+@mixin section-margin {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-@mixin titleAboutsx {
-    font-size: 2vw;
-    font-weight: 600;
-}
-@mixin titleAboutlg {
+
+// --- FONT SIZE FOR CONTENT
+@mixin font-size-small {
     font-size: 1.3vw;
     font-weight: 600;
 }
-@mixin contentAboutlg {
+@mixin font-size-medium {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+// --- FONT SIZE FOR TITLES
+@mixin font-size-title {
     font-size: 1.15vw;
     font-weight: 600;
 }
